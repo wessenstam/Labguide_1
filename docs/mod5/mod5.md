@@ -9,13 +9,13 @@ Now that there are some articles using different methodologies, we are going to 
 
 *Image 22\. Overview of tools on devrev.community.*
 
-➔ Open the S.P.I.D.E.R. tool and notice that there is a Personal Access Token needed. 
+➔ Open the S.P.I.D.E.R. tool and notice that there is a **Personal Access Token (PAT)**  needed. 
 
 ![](../images/image029.png)
 
 *Image 23\. S.P.I.D.E.R. Pat key required.*
 
-➔ Head back to DevRev environment and click **\< Settings** at the top of the navigation pane
+➔ Head back to DevRev environment and click **< Settings** at the top of the navigation pane
 
 ![](../images/image030.png)
 
@@ -33,19 +33,21 @@ Now that there are some articles using different methodologies, we are going to 
 
 *Image 26\. Create a PAT.*
 
-➔ Provide a meaningful name, click **Generate** and copy the PAT.
+➔ Provide a meaningful name, click **Generate** and copy the PAT by clicking the **Copy** button.
 
 ![](../images/image033.png)
 
 *Image 27\. Generate a PAT.*
 
-➔ The message shows that it can be seen only **once**. Make sure to store it somewhere where it can be reused when needed.
+➔ The message shows that it can be seen only **once**. Make sure to save it somewhere where it can be reused when needed.
 
 ![](../images/image034.png)
 
 *Image 28\. Copy generated PAT.*
 
-➔ Head back to the S.P.I.D.E.R. UI and copy the PAT key, and click **Initialize** **Connection**. Three parameters have to be filled:
+➔ Head back to the S.P.I.D.E.R. UI and copy the PAT key, and click **Initialize** **Connection**. 
+
+➔ Three parameters have to be filled:
 
 1. The URL to crawl  
 2. What is the Target Part  
@@ -77,7 +79,7 @@ Now that there are some articles using different methodologies, we are going to 
 !!! Example "Be aware"
     The process will take approx. 60 minutes for a full scrap as the site is quite large. In total approx. 300 pages will be pulled in as articles.  
 
-➔ Wait approx. 5 minutes before heading back to the DevRev instance. 
+➔ Wait approx. 10 minutes before heading back to the DevRev instance.
 
 ### Organise Articles into Collections {#organise-articles-into-collections}
 

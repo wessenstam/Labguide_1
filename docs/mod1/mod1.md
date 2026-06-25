@@ -4,12 +4,6 @@ To be able to access the lab environment you need to register first.
 
 The instructors will present you with a QR-code you can open with your phone. 
 
-(Note: During the lab session Ngrok might be used to route external traffic to the labmanager tool, so you could see an odd ngrok url like in the example below, and it also might ask you if you want to visit this site. We can assure you this is perfectly safe)
-
-![](../images/image004.png){ width=33% }
-
-*Image 1\. NGROK confirmation (optional).*
-
 This will then guide you to a sign up page where you need to enter your email address. Enter your address and follow the instructions on screen to register for a lab. 
 
 

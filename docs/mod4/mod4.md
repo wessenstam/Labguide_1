@@ -16,8 +16,9 @@ Create articles that can be used to answer questions from humans by using AI.
 
 ## Manual creation of Articles {#manual-creation-of-articles}
 
-➔  Go to the **Settings** menu and click on **Knowledge Base**. You can find the settings menu via the cogwheel icon all the way at the top of the sidebar menu, next to your initials   
-![](../images/image020.png)
+➔  Go to the **Settings** menu, by clicking :material-cog-outline:, and click on **Knowledge Base**. 
+
+![](../images/image020.png){% width=30% %}
 
 *Image 14\. Settings icon next to user initials.*
 
@@ -33,11 +34,13 @@ Create articles that can be used to answer questions from humans by using AI.
 2. **Describe your article:** An article that describes how to connect a printer on Windows and Mac O/S       
 3. **Part:** As part he selects IT \-\> Helpdesk as this is an article that could be used in Helpdesk tasks
 
-➔ Leave the rest default, there are three options shown
+➔ Leave the rest default for now.
 
-* Create Page — use the rich-text editor to author content directly in DevRev  
-* Add a link — paste a URL to an externally hosted article (opens in a new tab for readers)  
-* Upload a file — attach a PDF or MS Word document
+➔ There are three options shown
+
+* **Create Page** — use the rich-text editor to author content directly in DevRev  
+* **Add a link** — paste a URL to an externally hosted article (opens in a new tab for readers)  
+* **Upload a file** — attach a PDF or MS Word document
 
 ![](../images/image022.png)
 
@@ -52,7 +55,7 @@ Create articles that can be used to answer questions from humans by using AI.
 
 *Image 17\. Article copy from ChatGPT.*
 
-➔ Click the Create button in the top right corner of the screen. In the menu that opens click the Publish.
+➔ Click the Create button in the top right corner of the screen. In the menu that opens click **Publish**.
 
 ![](../images/image024.png)
 
@@ -65,7 +68,7 @@ Create articles that can be used to answer questions from humans by using AI.
     2. **Publish:** This can be used to have another Administrator looking at the article to check the information and then publish the article.
 
 
-➔ Use the breadcrumbs at the top of the screen and click the Knowledge Base text  
+➔ Use the breadcrumbs at the top of the screen and click the **Knowledge Base** text  
 
 ![](../images/image025.png)
 
@@ -75,9 +78,10 @@ Create articles that can be used to answer questions from humans by using AI.
 
 1. **Title:** Premier home insurance  
 2. **Describe your article:** An article that describes the Policy for Premier home insurance      
-3. **Part:** As part he selects Insurance as this article is related to that part
+3. **Part:** As Part select **Insurance** as this article is related to that part
 
-➔ Click the icon Add a link and paste this link [https://www.hastingsdirect.com/documents/home/HP-HH-GW-08-24.pdf](https://www.hastingsdirect.com/documents/home/HP-HH-GW-08-24.pdf) and click Confirm.  
+➔ Click the icon Add a link and paste this link [https://www.hastingsdirect.com/documents/home/HP-HH-GW-08-24.pdf](https://www.hastingsdirect.com/documents/home/HP-HH-GW-08-24.pdf) and click **Confirm**.
+
 ![](../images/image026.png)
 
 *Image 20\. Add an article with a Link*
@@ -97,6 +101,19 @@ Create articles that can be used to answer questions from humans by using AI.
 *Image 21\. An article with an uploaded file.*
 
 ➔ Publishes the article.
+
+!!! Abstract "Remark"
+    Be aware of the below table:
+
+    | Method | What works | What doesn't |
+    | --- | --- | ---|
+    | Create Page (rich-text editor) | Full text is parsed into Memory | Embedded links within text don't get extracted into content |
+    | Add a Link (URL) | Public URLs work fine | URLs behind authentication won't extract. Pages requiring JS rendering may also fail. |
+    | Upload a File | Supports: docx, pdf, html, md, paligo, text | -- |
+
+    **File size above <font color=red>20MB</font> will be ignored by default. Trying to upload, will be disallowed**
+    
+
 
 <hr>
 

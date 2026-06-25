@@ -3,7 +3,7 @@
 Now that we have Articles via manual and scrapping using a tool, the next step is to import information from another tool ACME uses inside their organization, Confluence. 
 
 
-!!! Abstract "Be aware"
+!!! Example "Be aware"
     For AirSync with Confluence to work, there are some pre-requisite steps that need to be taken:
 
     * Admin access to your DevRev org  
@@ -17,7 +17,8 @@ Now that we have Articles via manual and scrapping using a tool, the next step i
 
 ### Step 1: Install the Confluence AirSync Snap-in {#step-1:-install-the-confluence-airsync-snap-in}
 
-➔ Navigate to Snap-ins in the *Integration* section in the Settings panel.  
+➔ Navigate to Snap-ins in the *Integration* section in the Settings panel.
+
 ![](../images/image046.png)
 
 *Image 39\. Location of the Snap-ins.*
@@ -28,7 +29,7 @@ Now that we have Articles via manual and scrapping using a tool, the next step i
 
 *Image 40\. Getting the Confluence Snapin.*
 
-➔ In the top right corner of the screen that just opened click the **Add** button. In the new screen that opens, toggle the **Article Visibility**
+➔ In the top right corner of the screen that just opened click the **Install** button. In the new screen that opens, toggle the **Article Visibility**
 
 ![](../images/image048.png)
 
@@ -45,50 +46,46 @@ Configure brings back the toggle switches that have been seen earlier.
 
 ### Step 2: Configure the AirSync {#step-2:-configure-the-airsync}
 
-➔ Click **Start AirSync** and you will asked to provide the connection for *Confluence*. 
-➔ Click **Confluence**.  
+➔ Click **Start AirSync** and you will asked to type of the connection for *Confluence*. 
+
+➔ Click **PAT**.  
 
 ![](../images/image050.png)
 
-*Image 41\. Toggle switch for Article Visibility.*
+*Image 43\. Type of connection.*
 
-➔ In the new screen Click the dropdown box. But as there is no connection yet available, select **\+ Add connection**.
+➔ In the Start a new connecion, use the following information (all information is from the email you have received):
+
+
+  - **Connection name:** Confluence  
+  - **Subdomain:** The URL of your Confluence site,**<YOUR_SITE\>**.atlassian.net  
+  - **Email:** The email address that belongs to the PAT  
+  - **PAT:** The Personal Access Token from the email
+
 
 ![](../images/image051.png)
 
-*Image 43\. Connection selection box.*
+*Image 44\. PAT connection example.*
 
-➔ In the connection screen use the following information:
-
-1. **Connection name:** Internal Confluence  
-2. **Subdomain:** The URL of your Confluence site,\<YOUR\_SITE\>.atlassian.net  
-3. **Email:** The email address that belongs to the PAT  
-4. **PAT:** The Personal Access Token
-
----
-
-!!! Danger "Be aware"
-    Below screenshots holds **EXAMPLE DATA\!\!\!\!** Use the information from the email you received for the correct information
-
----
-
-![](../images/image052.png)
-
-*Image 44\. Example Connection setup.*
 
 ➔ Click the **Next** button.
-➔ In the screen that appears select the data source from the received email and assigns it to the **IT Part**. Leave the rest default.  
-➔ Click the **Start** button.  
+
+➔ In the screen that appears select the data source from the received email.
 
 ![](../images/image053.png)
 
 *Image 45\. Setup the source and start the AirSync.*
 
+➔ Click the **Next** button.  
+
+➔ In the *Select time frame* screen, leave the default (All) selected and click **Next**
+
+
+
 ### Step 3: Map fields between Confluence and DevRev {#step-3:-map-fields-between-confluence-and-devrev}
 
-➔ In the screen that appears the AirSync shows after a few seconds and that **Field Mapping** is needed.
+➔ In the screen that appears **Field Mappings** are shown. By default the AirSync maps the fields from Confluence to the fields in DevRev. You will also get an email with the same sort of message.
 
-➔ Click the text **Map fields** and follow the steps that are needed to make the initial sync work. You will also get an email with the same sort of message.
 
 ![](../images/image054.png)
 
@@ -98,33 +95,28 @@ Configure brings back the toggle switches that have been seen earlier.
 
 *Image 47\. Setup Field Mapping notification as email.*
 
-➔ Use the following selections and click the **Next** button to get to the next step:
 
-* Step 1\. No changes  
-* Step 2\. No changes  
-* Step 3\. No changes  
-* Step 4\. No changes  
-* Step 5\. For all sub pages click the *two* **Select All** button 
+➔ Click **Finish**, a new screen appears.
 
-![](../images/image056.png)
-
-*Image 48\. Last step of the Field mapping setup.*
-
-➔ Click **Finish**, a new screen appears stating that the mapping has been submitted successfully. On the last screen he also clicks the Finish button. 
-
-![](../images/image057.png)
-
-*Image 49\. Last step of the Field mapping setup.*
 
 ### Step 4: Checking the AirSync {#step-4:-checking-the-airsync}
 
-➔ After a few seconds, the Sync status column has changed into **Completed**. 
+➔ After a few seconds, the Sync status column has changed into **In sync**. 
 
 ![](../images/image058.png)
 
-*Image 50\. The AirSync status.*
+*Image 49\. The AirSync status.*
 
-➔ By clicking on the line details are shown on the sync that has happened. On the **History** tab it shows what has been mapped from Confluence into DevRev and what happened to the items (CRUD)  
+➔ By clicking on the line, that shows the source name, details are shown on the sync that has happened. 
+
+![](../images/image058a.png)
+
+*Image 50\. The AirSync detailed status.*
+
+➔ Click the line that shows *Blogs, Folders, Group Members...* to see the details
+
+
+➔ On the **History** tab it shows what has been mapped from Confluence into DevRev and what happened to the items (CRUD)  
 
 ![](../images/image059.png)
 
@@ -137,6 +129,14 @@ Configure brings back the toggle switches that have been seen earlier.
 ![](../images/image060.png)
 
 *Image 52\. The AirSync field mappings details.*
+
+!!! Example "Be aware"
+    In the top right corner you see the text **Blueprint 1**. All changes you might have made are stored as a Blueprint for the mapping. To revert to a previous active blueprint use one of the below options:
+  
+    - "Reset changes" button - This resets field mappings for a given record type back to the connector defaults (what the external domain metadata and the connector developers suggest). It does not reset to what you had at the start of the session, and it does not reset to the state in the latest active blueprint .
+    - Partial reimport - If you've changed field mappings in the blueprint and applied them, AirSync can perform a partial reimport limited to just the affected fields (and optionally a time window). This re-applies the new mapping to already-imported data but doesn't reverse the change .
+    - Data already in DevRev is not deleted when you modify mappings - it remains as-is, and only future syncs use the new configuration. If you unselect a record type, existing records stay but become "disconnected" from the external system .
+
 
 ➔ Under the Settings tab, this is where the following items can be set and/or updated:
 

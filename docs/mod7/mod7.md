@@ -17,17 +17,19 @@ Now that we have some experience with articles, manual creation, web scrapper an
 
 First we want to make sure the AI Agent is not able to connect to the internet and search for answers. 
 
-➔ Navigate to **Settings \-\> Computer** all the way at the bottom of the Settings navigation pane in the *Workflow* section.
+➔ Navigate to **Settings -> Computer -> Workflow & Tools** all the way at the bottom of the Settings navigation pane in the *Computer* section.
 
 ![](../images/image062.png)
 
 *Image 54\. The location of the Computer settings*
 
-➔ We see here that the Web search is not enabled, as we see a button called **Enable web search** to enable the Web Search, which we will no toggle. So the Agent can only search the articles that have been created/imported.
+➔ In the screen that is now on the right, we don't see any capabilities. This implies that the skill **Websearch** is not enabled. To be sure, click the **+ Add capabilit** button and search for the Websearch and see that there is a text called **Add to agent**
 
 ![](../images/image063.png)
 
 *Image 55\. The location of the Web search enabled button.*
+
+➔ Now we no for 100% sure that Computer is not capable of going onto the internet to search for information. It can only use Memory for its answering of queries. Close the screen by clicking the **X** in the top right corner.
 
 ➔ Click **< Settings** at the top of the navigation pane to return to the “normal” user’s UI.
 
@@ -36,6 +38,12 @@ First we want to make sure the AI Agent is not able to connect to the internet a
 *Image 56\. The text < Settings to click.*
 
 ## Step 2: Test 1 \- A relative simple question {#step-2:-test-1---a-relative-simple-question}
+
+!!! Example "Before we start"
+    Due to the amount of time speed between the running of S.P.I.D.E.R. (the scrapping of the webiste) and the conversation with Computer, the amount of scources might differ. Remember that there were approx. 300 pages that have turned into articles. Known numbers of sources are between five and eight. 
+    
+    The shown screenshots are examples and your answer might slightly differ, due to the fact that insurances change and we don't control the content of the webpage we are scrapping the information from.
+
 
 ➔ Click the text **“Let’s do this”** at the bottom of the navigation pane.   
 
@@ -80,7 +88,7 @@ First we want to make sure the AI Agent is not able to connect to the internet a
 
 *Image 57\. The first reply of the AI Agent.*
 
-➔ The sources that the Agent used, with reasoning, to formulate the answer are shown at the bottom of the answer. In this case 5 sources.
+➔ The sources that the Agent used, with reasoning, to formulate the answer are shown at the bottom of the answer. 
 
 ➔ Click the **Sources** text and see the sources
 
@@ -88,32 +96,37 @@ First we want to make sure the AI Agent is not able to connect to the internet a
 
 *Image 58\. The sources the AI Agent used.*
 
+
 ## Step 3: Test 3 \- A more complex question {#step-3:-test-3---a-more-complex-question}
 
 Now that we are getting an answer to a relatively simple question that cannot have come from the internet, ask a more complex question. 
 
-➔ The question to raise is:”*Is there a insurance that can be used for low amount of driven miles?*”.
+➔ The question to raise is:”*Is there an insurance that can be used for low amount of driven miles?*”.
 
 Again the Agent reach out to the articles and queries the information to find an answer:  
+
 “  
-*Yes\! There's a good option for low mileage driving. YouDrive is Hastings Direct's telematics insurance policy that's designed to reward safe drivers and can help you save money if you drive fewer miles [\[1\]](https://www.hastingsdirect.com/car-insurance/guides/new-driver-costs/).*
+There isn't a dedicated "pay-per-mile" product in our documentation, but there are two relevant options for low-mileage drivers:
 
-*How it works for low mileage*
+---
 
-*With YouDrive, you estimate your annual mileage when you take out the policy. The key benefit is that there's no limit on the number of miles you can drive within a year – so you won't be penalized if you drive less than expected [\[2\]](https://www.hastingsdirect.com/car-insurance/guides/new-drivers/myth-busting-telematics/). This makes it ideal if you're uncertain about your exact mileage or drive infrequently.*
+## Options for low-mileage drivers
 
-*How to save money*
+### 1. Declare a low mileage estimate on a standard policy
+When taking out any car insurance policy, you're asked to estimate your annual mileage [1]. The less you drive, the lower the perceived risk – and generally, the lower your premium [2]. Just make sure your estimate is honest, as an inaccurate figure could invalidate your cover [1].
 
-* *Reduce mileage – The more you're out on the road, the more of a risk insurers perceive you to be. Therefore, reducing your annual mileage can help you save money on your premium [\[1\]](https://www.hastingsdirect.com/car-insurance/guides/new-driver-costs/).*  
-* *Drive safely – Your renewal price is based on your driving behaviour. If you drive safely and sensibly, you'll pay less [\[3\]](https://www.hastingsdirect.com/car-insurance/telematics-insurance/).*
+### 2. YouDrive – telematics (usage-based) insurance
+**YouDrive** is Hastings Direct's telematics policy, which prices your insurance based on *how safely* you drive rather than a fixed rate [3]. Key points:
 
-*What YouDrive includes*
+- Your price is based on five driving categories: phone use, speed, braking, acceleration, and cornering [3].
+- There are **no mileage restrictions** – you can drive as much or as little as you like [4].
+- It uses a small tab on your windscreen that pairs with the Hastings Direct app – no bulky black box required [3].
+- Telematics policies are on average **20% cheaper** than a standard policy [5].
+- Good drivers continue to benefit from lower prices at renewal [3].
 
-* *A small wireless tab (instead of a complicated black box) that monitors your driving [\[3\]](https://www.hastingsdirect.com/car-insurance/telematics-insurance/).*  
-* *An app to track and improve your driving score [\[2\]](https://www.hastingsdirect.com/car-insurance/guides/new-drivers/myth-busting-telematics/).*  
-* *Savings from day one, and every year if you continue to drive well [\[3\]](https://www.hastingsdirect.com/car-insurance/telematics-insurance/).*
+---
 
-*YouDrive is the UK's market-leading telematics product, so it's a solid choice if you're looking to keep costs down with lower mileage [\[4\]](https://www.hastingsdirect.com/about-us/).*
+So while there's no strict "pay-per-mile" product, YouDrive is the closest option – and if you drive infrequently and safely, it could be a very cost-effective choice. Would you like to know more about how YouDrive works?
 
 “
 
@@ -123,36 +136,32 @@ Again the Agent reach out to the articles and queries the information to find an
 
 ## Step 4: Test 4 \- Having a conversation {#step-4:-test-4---having-a-conversation}
 
-➔ Based on the answer with *YouDrive* we want to know more about that option. So ask:“*Now you found the YouDrive insurance, but can that also be used for motorcycles?*”. Computer thinks a bit and replies with an answer that provides something in the line of, that YouDrive is not available for Motor cycles, but there are other options for lowering the cost of an insurance. 
+➔ Based on the answer with *YouDrive* we want to know more about that option. So ask:“*Now you found the YouDrive insurance, but can that also be used for motorcycles and how can the premium be cheaper?*”. Computer thinks a bit and replies with an answer that provides something in the line of, that YouDrive is not available for Motor cycles, but there are other options for lowering the cost of an insurance. 
 
-➔ One option is interesting in the answer give: “accredited training”. 
+➔ One option is interesting in the answer give: “advanced riding qualification”. 
 
 ![](../images/image069.png)
 
 *Image 59\. The interesting option*
 
-➔ We want to know more on that option ask:”*What are those accredited trainings you refer to?*”. Computer is thinking again and comes back with a great answer by reasoning and looking at the information it has access to:  
+➔ We want to know more on that option ask:”*What are those advanced riding qualifications you refer too?*”. Computer is thinking again and comes back with a great answer by reasoning and looking at the information it has access to:  
+
 ”
+Our documentation mentions three recognised advanced riding qualifications that can help lower your motorbike insurance premium [1]:
 
-*Great question\! There are several types of accredited training courses available for motorcycle riders that can help lower your insurance premiums:*
+---
 
-*Advanced qualifications recognised by insurers*
+## Advanced riding qualifications
 
-*Gaining an advanced qualification can lead to cheaper motorcycle cover, as long as it's recognised by your insurance provider. These include [\[1\]](https://www.hastingsdirect.com/motorbike-insurance/multi-bike-insurance):*
+- **BikeSafe certificate** – a police-led motorcycle assessment programme that evaluates your riding skills and gives you personalised feedback to improve your safety on the road [1].
 
-* *BikeSafe certificate – A safety-focused training programme.*  
-* *Enhanced Rider Scheme – Advanced training to improve your riding skills.*  
-* *RoSPA Advanced Motorcycle Training – Professional advanced training from the Royal Society for thePrevention of Accidents.*
+- **Enhanced Rider Scheme (ERS)** – a government-backed training programme designed to help riders of all experience levels improve their skills and ride more safely [2.
 
-*Advanced riding courses*
+- **RoSPA Advanced Motorcycle Training** – an advanced riding course run by the Royal Society for the Prevention of Accidents (RoSPA), one of the UK's most well-known road safety organisations [1].
 
-*Taking an advanced riding course will help you emphasise safety, understand the power of your bike, and could result in an insurance premium discount [\[2\]](https://www.hastingsdirect.com/motorbike-insurance/guides/bike-safety).*
+---
 
-*Compulsory Basic Training (CBT)*
-
-*If you're a beginner, the Compulsory Basic Training (CBT) course is a legal requirement (unless you obtained a full car licence before February 2001). The CBT involves on-site training and riding as well as driving on the road with a trained guide. Once completed, you'll receive a certificate (DL196) that lasts for up to 2 years [\[3\]](https://www.hastingsdirect.com/motorbike-insurance/guides/bike-beginners-guide/).*
-
-*The key takeaway is that investing in any of these recognised training courses not only improves your safety on the road but can also help reduce your motorcycle insurance premiums.*
+The key thing to note is that the qualification **must be recognised by your insurance provider** for it to result in a discount [1]. It's also worth mentioning that taking an advanced riding course doesn't just save you money – it can genuinely make you a safer rider [3].
 
 “
 
@@ -160,7 +169,7 @@ Again the Agent reach out to the articles and queries the information to find an
 
 ➔ To be sure that the agent cannot access the internet ask the following question:”*What can you tell me about the ACME corporation*”. Even though there is no real information, which is given by the agent, it still provides a professional answer that “  
 *“*  
-*I couldn’t find any information*. *Not just articles, but also searches for an answer in accounts and opportunities.*  
+*I couldn't find any information about an "ACME corporation" in our internal knowledge base or records. There's no account, documentation, or other content related to that company in our system.*  
 *“*
 
 ![](../images/image070.png)
