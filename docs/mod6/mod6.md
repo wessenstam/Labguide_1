@@ -31,7 +31,7 @@ Now that we have Articles via manual and scrapping using a tool, the next step i
 
 ➔ In the top right corner of the screen that just opened click the **Install** button. In the new screen that opens, toggle the switches **Article Visibility** and **Import as External**
 
-![](../images/image048.png)
+![](../images/image048.png){% width=50% %}
 
 *Image 41\. Toggle switches for Article Visibility.*
 
