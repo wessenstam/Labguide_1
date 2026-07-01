@@ -29,11 +29,11 @@ Now that we have Articles via manual and scrapping using a tool, the next step i
 
 *Image 40\. Getting the Confluence Snapin.*
 
-➔ In the top right corner of the screen that just opened click the **Install** button. In the new screen that opens, toggle the **Article Visibility**
+➔ In the top right corner of the screen that just opened click the **Install** button. In the new screen that opens, toggle the switches **Article Visibility** and **Import as External**
 
 ![](../images/image048.png)
 
-*Image 41\. Toggle switch for Article Visibility.*
+*Image 41\. Toggle switches for Article Visibility.*
 
 ➔ Click **Save** and **Install Snap-in**. Notice that the button has changed into other options: **Events, Start AirSync** and **Configure**.
 
